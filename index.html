@@ -3,35 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Om Parkash Paudel Gaurav</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Om Prakash Paudel (Gaurav) - Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #2d3748;
+        }
+        nav {
+            background-color: rgba(52, 73, 94, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2980b9;
+        }
+        header {
+            background: linear-gradient(rgba(41, 128, 185, 0.9), rgba(44, 62, 80, 0.9));
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 2rem;
+            position: relative;
+        }
+        .profile-container {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto 1rem auto;
+        }
+        .profile-image {
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .trek-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .trek-item {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #2980b9;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .skill-category {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .contact-info {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted white;
+        }
+        .contact-info a:hover {
+            border-bottom: 1px solid white;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .profile-container {
+                width: 250px;
+                height: 333px;
+            }
+            .profile-image {
+                width: 250px;
+                height: 333px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#know-me">Know Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Welcome to Mr. Om Parkash Paudel Gaurav's Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="profile-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gaurab%20pp.jpg-iKLysOyfS00D7CSgi9KcUtXJ1kzLQl.jpeg" alt="Om Prakash Paudel in the Himalayas" class="profile-image">
+        </div>
+        <h1>Om Prakash Paudel (Gaurav)</h1>
+        <p>Marketing Specialist | Tech Enthusiast | Trekking Enthusiast</p>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I'm Om Parkash Paudel Gaurav. Welcome to my website!</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
-        <!-- List your projects here -->
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:om.paudel@example.com">paudelg97@gmail.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Mr. Om Parkash Paudel Gaurav. All rights reserved.</p>
-    </footer>
+    
+    <main>
+        <section id="know-me">
+            <h2>Know Me</h2>
+            <p>I am a 24-year-old passionate marketing professional with a BBA degree from Tribhuvan University, Nepal. As a tech enthusiast, I'm currently exploring the world of graphic design while maintaining my love for trekking and outdoor adventures. My diverse interests span from digital marketing to conquering some of Nepal's most breathtaking trekking routes.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Marketing Skills</h3>
+                    <ul>
+                        <li>Digital Marketing</li>
+                        <li>Brand Management</li>
+                        <li>Market Research</li>
+                        <li>CRM</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tech Interests</h3>
+                    <ul>
+                        <li>Graphic Design</li>
+                        <li>Digital Tools</li>
+                        <li>New Technologies</li>
+                        <li>Web Platforms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Trekking Achievements</h3>
+            <div class="trek-list">
+                <div class="trek-item">Annapurna Base Camp (ABC)</div>
+                <div class="trek-item">Mardi Himal</div>
+                <div class="trek-item">Gosaikunda</div>
+                <div class="trek-item">Poon Hill</div>
+                <div class="trek-item">Tilicho Lake</div>
+                <div class="trek-item">Khumai</div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Business Administration (BBA)</strong></p>
+            <p>Specialization: Marketing</p>
+            <p>University: Tribhuvan University, Nepal</p>
+            <p>Currently pursuing interests in:</p>
+            <ul>
+                <li>Graphic Design fundamentals</li>
+                <li>Digital Marketing certifications</li>
+                <li>Technology and Innovation courses</li>
+            </ul>
+        </section>
+        
+        <section id="contact" class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:om.prakash@smc.edu.np">om.prakash@smc.edu.np</a></p>
+            <p>Phone: +977 9845952270</p>
+            <p>Website: <a href="http://www.omprakashpaudelgaurav.com.np" target="_blank">www.omprakashpaudelgaurav.com.np</a></p>
+        </section>
+    </main>
 </body>
 </html>
